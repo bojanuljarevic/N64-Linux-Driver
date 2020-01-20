@@ -1,0 +1,8 @@
+#!/bin/bash
+
+	dmesg -C
+	rmmod gpio_driver
+
+	make
+	insmod gpio_driver.ko
+	
